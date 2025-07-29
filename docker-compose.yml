@@ -1,0 +1,16 @@
+# =============================
+# docker-compose.yml
+# =============================
+
+services:
+  processo-ocr:
+    build: .
+    container_name: processo_ocr_integrado
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    working_dir: /app
+    command: streamlit run app/interface.py --server.port=8501 --server.address=0.0.0.0

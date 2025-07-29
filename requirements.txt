@@ -1,0 +1,13 @@
+# ===================================================================
+# requirements.txt (Atualizado para usar a API do Gemini)
+# ===================================================================
+
+streamlit
+pytesseract
+langchain
+python-docx
+lxml
+PyMuPDF
+jsonschema
+google-generativeai
+pandas
